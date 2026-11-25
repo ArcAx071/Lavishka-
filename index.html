@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#24172c">
+<title>For Lavishka — from Ashwin</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+:root{--cream:#fff7ef;--rose:#f2b7bd;--plum:#352139;--gold:#e8c98e;--muted:#d9c6d1}
+*{box-sizing:border-box}
+html{min-height:100%;background:#21182a}
+body{margin:0;min-height:100vh;color:var(--cream);font-family:'DM Sans',sans-serif;overflow-x:hidden;background:
+ radial-gradient(ellipse at 50% 0%,rgba(147,91,126,.32),transparent 45%),
+ radial-gradient(ellipse at 10% 80%,rgba(101,79,111,.25),transparent 42%),
+ linear-gradient(145deg,#211827,#302137 52%,#1c1a2b)}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.17;background-image:radial-gradient(#fff 0.6px,transparent .8px);background-size:31px 31px;mask-image:linear-gradient(transparent,#000 25%,#000 80%,transparent)}
+.ambient{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.glow{position:absolute;width:340px;height:340px;border-radius:50%;filter:blur(85px);opacity:.17;animation:drift 13s ease-in-out infinite alternate}
+.glow.one{background:#e48d9d;top:10%;left:-150px}.glow.two{background:#bca1d5;right:-170px;bottom:4%;animation-delay:-6s}
+@keyframes drift{to{transform:translate(65px,-35px) scale(1.18)}}
+main{position:relative;z-index:1;width:min(920px,92vw);margin:auto;padding:34px 0 46px}
+.topline{display:flex;justify-content:space-between;align-items:center;color:#d8bdc8;font-size:10px;letter-spacing:.22em;text-transform:uppercase}
+.seal{border:1px solid rgba(232,201,142,.42);border-radius:99px;padding:8px 12px;color:#f1d9ad;letter-spacing:.13em}
+.hero{text-align:center;padding:54px 0 28px}
+.eyebrow{font-size:10px;letter-spacing:.32em;color:#eacb9d;text-transform:uppercase}
+h1{font:600 clamp(46px,9vw,86px)/1.03 'Playfair Display',serif;margin:16px 0 10px;letter-spacing:-.045em}
+h1 em{color:#f0b9c2;font-weight:500}
+.subtitle{font:italic 16px 'Playfair Display',serif;color:#e4ccd6}
+.flower-stage{height:170px;display:grid;place-items:center;position:relative;margin:5px auto 0}
+.flower{width:112px;height:112px;position:relative;filter:drop-shadow(0 0 22px rgba(241,173,191,.35));animation:bloom 5s ease-in-out infinite}
+.petal{position:absolute;width:39px;height:59px;left:36px;top:0;transform-origin:50% 56px;border-radius:70% 70% 45% 45%;background:linear-gradient(145deg,#ffe4dc,#d982a1 70%,#9b638e);border:1px solid rgba(255,235,224,.42)}
+.petal:nth-child(1){transform:rotate(0deg)}.petal:nth-child(2){transform:rotate(45deg)}.petal:nth-child(3){transform:rotate(90deg)}.petal:nth-child(4){transform:rotate(135deg)}.petal:nth-child(5){transform:rotate(180deg)}.petal:nth-child(6){transform:rotate(225deg)}.petal:nth-child(7){transform:rotate(270deg)}.petal:nth-child(8){transform:rotate(315deg)}
+.flower-center{position:absolute;width:28px;height:28px;left:42px;top:42px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff4c8,#d9a85e 70%);box-shadow:0 0 25px #e8c98e}
+@keyframes bloom{50%{transform:scale(1.08) rotate(5deg)}}
+.intro{max-width:570px;margin:0 auto;color:#e1d1d9;font-size:14px;line-height:1.8}
+.open-btn,.nav-btn{border:0;cursor:pointer;color:#352139;background:linear-gradient(120deg,#f5d8c9,#eab4c4 55%,#e8c98e);font:600 11px 'DM Sans';letter-spacing:.14em;text-transform:uppercase;padding:14px 22px;border-radius:99px;box-shadow:0 9px 30px rgba(230,166,188,.18);transition:transform .25s,box-shadow .25s}
+.open-btn:hover,.nav-btn:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(230,166,188,.3)}
+.open-btn{margin-top:24px}
+.letter-wrap{max-width:710px;margin:25px auto 0;perspective:1000px}
+.letter{position:relative;padding:clamp(24px,5vw,48px);border:1px solid rgba(245,220,203,.24);border-radius:26px;background:linear-gradient(145deg,rgba(255,247,239,.095),rgba(255,247,239,.035));box-shadow:0 25px 90px rgba(0,0,0,.26),inset 0 1px rgba(255,255,255,.12);backdrop-filter:blur(18px);opacity:0;transform:translateY(22px) rotateX(5deg);pointer-events:none;max-height:0;overflow:hidden;transition:opacity .8s,transform .8s,max-height .9s,padding .6s}
+.letter.open{opacity:1;transform:none;pointer-events:auto;max-height:1000px}
+.letter-head{display:flex;justify-content:space-between;gap:12px;align-items:center;border-bottom:1px solid rgba(245,220,203,.18);padding-bottom:18px}
+.note-count{font-size:10px;letter-spacing:.2em;color:#eacb9d;text-transform:uppercase}
+.note-title{font:500 24px 'Playfair Display',serif}
+.message{font:500 clamp(17px,2.5vw,21px)/1.9 'Playfair Display',serif;color:#fff2eb;margin:25px 0 22px;min-height:220px}
+.message .para{animation:fadeUp .55s both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.controls{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.dots{display:flex;gap:8px}.dot{width:7px;height:7px;border-radius:50%;background:#806b7c;transition:.25s}.dot.active{width:24px;border-radius:9px;background:#e8c98e}
+.nav-btn{padding:11px 17px;font-size:10px}.nav-btn.secondary{background:rgba(255,255,255,.08);color:#f7e7e8;border:1px solid rgba(255,255,255,.18);box-shadow:none}
+.signature{text-align:right;margin-top:26px;color:#eacb9d;font:italic 18px 'Playfair Display',serif}
+.footer{text-align:center;color:#a994a5;font-size:10px;letter-spacing:.14em;margin-top:38px}
+.petal-fall{position:fixed;top:-30px;z-index:2;pointer-events:none;color:#f0b5c3;text-shadow:0 0 12px rgba(244,178,200,.5);animation:fall linear forwards}
+@keyframes fall{to{transform:translate3d(var(--drift),110vh,0) rotate(600deg);opacity:0}}
+.spark{position:fixed;width:4px;height:4px;border-radius:50%;background:#f4d9b0;box-shadow:0 0 12px 3px rgba(244,217,176,.35);pointer-events:none;animation:twinkle 2.6s ease-in-out infinite}
+@keyframes twinkle{50%{opacity:.2;transform:scale(.5)}}
+@media(max-width:560px){main{padding-top:22px}.hero{padding-top:43px}.flower-stage{height:145px}.message{min-height:290px}.topline{font-size:8px}.seal{padding:7px 9px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="ambient"><div class="glow one"></div><div class="glow two"></div></div>
+<main>
+ <div class="topline"><span>A LITTLE NOTE FROM ASHWIN</span><span class="seal">✦ SEALED WITH AFFECTION ✦</span></div>
+ <header class="hero">
+  <div class="eyebrow">A small corner of the universe</div>
+  <h1>For <em>Lavishka</em></h1>
+  <div class="subtitle">some people make the world feel softer 🌼</div>
+  <div class="flower-stage" aria-hidden="true"><div class="flower">
+   <i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="flower-center"></i>
+  </div></div>
+  <p class="intro">Eylo lavishka 🧿🎀🌼<br>A little collection of words, gathered with a lot of fondness. Take your time. These are just for you.</p>
+  <button class="open-btn" id="open">Open your little letter&nbsp; ✧</button>
+ </header>
+ <section class="letter-wrap">
+  <article class="letter" id="letter" aria-live="polite">
+   <div class="letter-head"><div><div class="note-count" id="count">NOTE 01 / 03</div><div class="note-title" id="noteTitle">A little sunshine</div></div><span style="font-size:25px;color:#e8c98e">❀</span></div>
+   <div class="message" id="message"></div>
+   <div class="controls">
+    <button class="nav-btn secondary" id="prev" disabled>← Previous</button>
+    <div class="dots"><i class="dot active"></i><i class="dot"></i><i class="dot"></i></div>
+    <button class="nav-btn" id="next">Next note →</button>
+   </div>
+   <div class="signature">With a smile, <strong>Ashwin</strong> ♡</div>
+  </article>
+ </section>
+ <div class="footer">MADE OF KIND WORDS · A LITTLE LOVE · AND A FEW FLOWER PETALS</div>
+</main>
+<script>
+const notes = [
+ {title:"A little sunshine", body:`Lavishka ke saath baatein karna bilkul uss pehli baarish jaisa lagta hai jo bina shor kiye sab kuch khubsurat bana deti hai 🌧️ Uski aankhon ki chamak aur har baat ko samajhne ka tareeka use bheed se bilkul alag khada karta hai. Woh un logon mein se hai jo sirf saath nahi dete, balki aapke din ko behtar banane ki wajah ban jaate hain. Jitna zyada use jaano, utna hi lagta hai ki itni saaf aur pyari soch wale log aajkal bahut kam milte hain 💫`},
+ {title:"A quiet kind of magic", body:`Kuch log sirf baaton se nahi, apni maujoodgi se hi sukoon de jaate hain, aur Lavishka bilkul waisi hi hai ✨ Uske lafzon mein ek aisi saadgi aur gehrai hai jo seedha dil ko chhoo jaati hai. Bheed mein bhi uska andaaz sabse alag aur thoda khaas lagta hai jaise koi khoobsurat si nazm jise baar baar padhne ka mann kare 🌙 Sach toh yeh hai ki usse milne ke baad har cheez thodi zyada roshan aur mayne-daar lagne lagti hai.`},
+ {title:"Effortlessly you", body:`Lavishka ki sabse badi khaasiyat yeh hai ki use kisi ka attention paane ke liye kabhi extra effort nahi daalna padta uski natural grace hi kaafi hoti hai ✨ Jis tareeke se woh baat karti hai aur har cheez ko itne sukoon se handle karti hai, woh kaafi rare aur attractive hai. Sach kahoon toh uske aas-paas rehne par waqt thoda aur behtar aur interesting lagne lagta hai 😊 Aisi effortless class bahut kam logon mein dekhne ko milti hai, aur shayad yahi wajah hai ki usse baat karne ka mann baar baar karta hai.`}
+];
+let index=0;
+const letter=document.getElementById('letter'), message=document.getElementById('message'), count=document.getElementById('count'), title=document.getElementById('noteTitle');
+const dots=[...document.querySelectorAll('.dot')], prev=document.getElementById('prev'), next=document.getElementById('next');
+function render(){
+ const n=notes[index]; count.textContent=`NOTE 0${index+1} / 03`; title.textContent=n.title;
+ message.innerHTML=''; const p=document.createElement('p');p.className='para';p.textContent=n.body;message.appendChild(p);
+ dots.forEach((d,i)=>d.classList.toggle('active',i===index));
+ prev.disabled=index===0; prev.style.opacity=prev.disabled?.45:1;
+ next.textContent=index===2?'Read again ↻':'Next note →';
+}
+document.getElementById('open').addEventListener('click',()=>{letter.classList.add('open');render();setTimeout(()=>letter.scrollIntoView({behavior:'smooth',block:'center'}),160);});
+prev.addEventListener('click',()=>{if(index>0){index--;render();}});
+next.addEventListener('click',()=>{index=index===2?0:index+1;render();});
+function petal(){const el=document.createElement('span');el.className='petal-fall';el.textContent=['✿','❀','✧','♡'][Math.floor(Math.random()*4)];el.style.left=Math.random()*100+'vw';el.style.fontSize=(10+Math.random()*13)+'px';el.style.setProperty('--drift',(Math.random()*180-90)+'px');el.style.animationDuration=(8+Math.random()*8)+'s';document.body.appendChild(el);setTimeout(()=>el.remove(),17000)}
+setInterval(petal,850);
+for(let i=0;i<18;i++){const s=document.createElement('i');s.className='spark';s.style.left=Math.random()*100+'vw';s.style.top=Math.random()*100+'vh';s.style.animationDelay=(Math.random()*3)+'s';document.body.appendChild(s)}
+</script>
+</body>
+</html>
